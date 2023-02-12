@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>
+      Paint
+    </title>
+
+    <!--
+      Main thing of the web app is to take autographs of people on shirt
+      additional thing is photo, name and write
+    -->
+
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&display=swap" rel="stylesheet"-->
+  </head>
+  <body>
+
+
+    <div class="menu-btn-div">
+      <button class="menu-btn" onclick="showHideSettings()">⚙</button>
+    </div>
+
+    <div id="cnvOutDiv">
+
+      <div id="canvasDiv">
+      </div>
+      
+      <div class="menu">
+        
+        <div class="centerWrap">
+          <button onclick="pleaseSave()">
+            Save 💾
+          </button>
+          <button onclick="fillCanvas()">
+            Fill Canvas
+          </button>
+          <button id="startStopDrawing" onclick="startStopDrawing()">
+            🖌
+          </button>
+          <button onclick="pleaseClearArt()">
+            🗑️
+          </button>
+        </div>
+
+        <div id="two"></div>
+        <div id="three" class="centerWrap"></div>
+        <div id="four" class="centerWrap"></div>
+        <div id="five" class="centerWrap"></div>
+        <div id="six"></div>
+        
+      </div>
+    
+    </div>
+  
+
+            
+  <!-- <a href="#">Post Here🚀</a> -->
+          
+
+    <script src="sketch.js">
+    </script>
+
+    <script src="showHideDiv.js">
+    </script>
+
+  </body>
+</html>
